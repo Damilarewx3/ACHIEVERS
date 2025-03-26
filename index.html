@@ -1295,7 +1295,11 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form id="projectInquiryForm">
+                    <form action="https://formsubmit.co/achieversmediastudios@gmail.com" method="POST">
+                        <!-- Hidden Fields (Required) -->
+                        <input type="hidden" name="_subject" value="New Project Inquiry!">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
                         <div class="form-group">
                             <label for="name">Your Name</label>
                             <input type="text" id="name" name="name" required>
@@ -1319,6 +1323,7 @@
                             <label for="message">Tell Us About Your Project</label>
                             <textarea id="message" name="message" required></textarea>
                         </div>
+                        <input type="hidden" name="_autoresponse" value="Thank you for contacting Achievers Studio! We've received your message and will reply within 24 hours.">
                         <button type="submit" class="btn btn-primary">Send Inquiry</button>
                     </form>
                 </div>
